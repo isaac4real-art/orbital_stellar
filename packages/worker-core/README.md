@@ -1,1 +1,378 @@
-IyBAb3JiaXRhbC1zdGVsbGFyL3dvcmtlci1jb3JlCgpUeXBlIG1vZGVsIGZvciBPcmJpdGFsIHdvcmtlcnM6IHdoYXQgYSB3b3JrZXIgaXMsIGJlZm9yZSBhbnl0aGluZyBydW5zIG9uZS4KCmBgYGJhc2gKcG5wbSBhZGQgQG9yYml0YWwtc3RlbGxhci93b3JrZXItY29yZQpgYGAKCiMjIFN0YXR1cwoKVGhlIGxheWVyIGlzIG5vIGxvbmdlciBmcm96ZW4gc2NvcGUuIFcwLVczIGhhdmUgc2hpcHBlZDsgVzQgd2FzIGRyb3BwZWQKKCN 1137KS4gU2VlIFtgZG9jcy9kZXNpZ24vd29ya2Vycy5tZGBdKC4uLy4uL2RvY3MvZGVzaWduL3dvcmtlcnMubWQpIGZvciB0aGUKY3VycmVudCBidWlsZCBvcmRlciBhbmQgd2hhdCByZW1haW5zLgoKIyMgVGhlIGNvbnN0cmFpbnQgdGhpcyBwYWNrYWdlIGV4aXN0cyB0byBlbmZvcmNlCgoqKkEgd29ya2VyJ3MgdHJpZ2dlciBpcyBub3QgYSBjdXN0b2RpYW4uKiogQSB3b3JrZXIgZGVmaW5pdGlvbiBkZXNjcmliZXMgKndoZW4qCnRvIHN1Ym1pdCBhIHRyYW5zYWN0aW9uIGFuZCAqd2hhdCogaXQgaW52b2tlczsgaXQgbmV2ZXIgZGVzY3JpYmVzICpob3cgdG8gYWN0CmFzKiB0aGUgYWNjb3VudCB0aGF0IGF1dGhvcml6ZXMgaXQuIENvbmNyZXRlbHk6CgotIGBXb3JrZXJEZWZpbml0aW9uLm9wZXJhdG9yYCBpcyBhIHB1YmxpYyBrZXkuIFRoZSBkZWZpbml0aW9uIG5hbWVzIHdob3NlCiAgYXV0aG9yaXR5IGEgc3VibWlzc2lvbiB1c2VzIC0gaXQgbmV2ZXIgaG9sZHMgYSB3YXkgdG8gZXhlcmNpc2UgdGhhdAogIGF1dGhvcml0eSBpdHNlbGYuCi0gVGhlcmUgaXMgbm8gZmllbGQgYW55d2hlcmUgaW4gdGhpcyBtb2RlbCB0aGF0IGNhbiBjYXJyeSBhIHVzZXIncyBzZWNyZXQga2V5LAogIGEgc2lnbmVyLCBvciBhbnkgb3RoZXIgY3JlZGVudGlhbC4gU2lnbmluZyBhIHdvcmtlcidzIHRyYW5zYWN0aW9uIGlzIHRoZQogIHN1Ym1pdHRlcidzIHJlc3BvbnNpYmlsaXR5ICgxOC41KSwgc2NvcGVkIHRvIHRoZSBvcGVyYXRvcidzIG93biBhY2NvdW50LCBhbmQKICBoYXBwZW5zIGRvd25zdHJlYW0gb2YgZXZlcnl0aGluZyB0aGlzIHBhY2thZ2UgZGVmaW5lcy4KLSBJZiBzb21lIGZ1dHVyZSBjYXBhYmlsaXR5IHNlZW1zIHRvIG5lZWQga2V5IG1hdGVyaWFsIG9uIGEgYFdvcmtlckRlZmluaXRpb25gCiAgb3IgYSBgVHJpZ2dlcmAsIHRoYXQgbmVlZCBpcyBhIGRlc2lnbiBidWcgaW4gd2hhdGV2ZXIgd2FudHMgaXQgLSBub3QgYSBnYXAKICBpbiB0aGlzIHR5cGUgdG8gZmlsbCBpbi4KClRoaXMgaXMgdGhlIHdvcmtpbmcgZm9ybXVsYXRpb24gb2YgwqdDLjIgZm9yIHRoaXMgcGFja2FnZS4gVGhlIGZ1bGwKYXJjaGl0ZWN0dXJlLWRlY2lzaW9uIHJlY29yZCDigJQgYWxsIGZvdXIgcnVsZXMgaW4gcHJlY2VkZW5jZSBvcmRlciwgdGhlIGZpeGVkClcwIOKGkiBXNCBidWlsZCBvcmRlciwgdGhlIGZyb3plbiBub24tZ29hbHMsIGFuZCB0d28gY29ycmVjdGlvbnMgdGhhdCBtdXN0IG5vdCBiZQpyZS1saXRpZ2F0ZWQg4oCUIGlzCioqW2Bkb2NzL2Rlc2lnbi93b3JrZXJzLm1kYF0oLi4vLi4vZG9jcy9kZXNpZ24vd29ya2Vycy5tZCk6IHRoZSB0cmlnZ2VyIGlzIG5vdAp0aGUgY3VzdG9kaWFuLioqCgpJdCBpcyBub3QgYmFja2dyb3VuZCByZWFkaW5nLiBJdCBjYXJyaWVzIHRoZSByZXZpZXcgcnVsZSB0aGlzIHBhY2thZ2UgaXMgbWFpbnRhaW5lZCBieToKCj4gSWYgYSBwcm9wb3NlZCB3b3JrZXIgbmVlZHMgc2lnbmluZyBhdXRob3JpdHkgdG8gZG8gaXRzIGpvYiwgdGhlIGRlc2lnbiBpcyB0aGUKPiBidWcg4oCUIG5vdCB0aGUgd29ya2VyLgoKQSBjaGFuZ2UgdGhhdCBnaXZlcyBhIHdvcmtlciBhdXRob3JpdHkgb3ZlciB1c2VyIGZ1bmRzIGlzIHJlamVjdGVkIG9uIHRoYXQgYmFzaXMKYWxvbmUsIGhvd2V2ZXIgY29udmVuaWVudCBpdCBpcy4gUHJpb3IgYXJ0IGFuZCBjb21wZXRpdGl2ZSBub3RlcyBhcmUga2VwdApzZXBhcmF0ZWx5IGluCltgZG9jcy9kZXNpZ24vcHJpb3ItYXJ0LXdvcmtlcnMubWRgXSguLi8uLi9kb2NzL2Rlc2lnbi9wcmlvci1hcnQtd29ya2Vycy5tZCksCmJlY2F1c2UgdGhleSBkYXRlIGZhc3QgYW5kIGFyZSBzZWxmLXJlcG9ydGVkIHJhdGhlciB0aGFuIGF1ZGl0ZWQuCgojIyBXaGF0IGl0IGRvZXMKCmB3b3JrZXItY29yZWAgZGVmaW5lcyB3aGF0IGEgd29ya2VyICppcyosIGJlZm9yZSBhbnl0aGluZyBydW5zIG9uZS4gQSB3b3JrZXIKaXMgYW4gb2ZmLWNoYWluIHByb2Nlc3MgdGhhdCBzdWJtaXRzIGEgdHJhbnNhY3Rpb24gaW52b2tpbmcgYSBTb3JvYmFuIGNvbnRyYWN0CmZ1bmN0aW9uIHdoZW4gYSBjb25kaXRpb24gYmVjb21lcyB0cnVlLiBUaGlzIHBhY2thZ2UgaXMgdGhhdCB0eXBlIG1vZGVsOgoKLSAqKpdXb3JrZXJEZWZpbml0aW9uYCoqKiAtIGlkLCBvcGVyYXRvciwgdGFyZ2V0IGNvbnRyYWN0LCBmdW5jdGlvbiBuYW1lLCBhCiAgcHVyZSBhcmd1bWVudCBidWlsZGVyLCB0cmlnZ2VyLCBuZXR3b3JrLCBhbmQgYW4gb3B0aW9uYWwgZmVlLWJ1bXAgcG9saWN5LgotICoqYFRyaWdnZXJgKiogLSBhIGRpc2NyaW1pbmF0ZWQgdW5pb24gb3ZlciBgdGltZWAgfCBgZXZlbnRgIHwgYGNvbXB1dGF0aW9uYC4KICBPbmx5IGB0aW1lYCBleGVjdXRlcyBpbiBXMDsgYGV2ZW50YCBhbmQgYGNvbXB1dGF0aW9uYCBleGlzdCBhcyB0eXBlcyBub3cgc28KICB0aGF0IDE5LngtMjIueCBleHRlbmQgdGhpcyB1bmlvbiBpbnN0ZWFkIG9mIHJlc2hhcGluZyBpdCwgYW5kIGFyZSByZWplY3RlZAogIGF0IHJ1bnRpbWUgYnkgYGFzc2VydEltcGxlbWVudGVkVHJpZ2dlcmAgdW50aWwgVzIuCi0gKipgU2NoZWR1bGVgKiogLSBgaW50ZXJ2YWxgIG9yIGBjcm9uYCwgYm90aCB3aXRoIGFuIGV4cGxpY2l0IGB0aW1lem9uZWAgc28gYQogIHNjaGVkdWxlJ3MgZXhlY3V0aW9uIHRpbWVzIGRvbid0IGRlcGVuZCBvbiB3aGVyZSB0aGUgd29ya2VyIGhhcHBlbnMgdG8gcnVuLgoKIyMgQmFja3N0b3AKCsKnQy43J3MgbWVjaGFuaXNtOiB3aGVuIGEgcmVnaXN0ZXJlZCBleHRlcm5hbCB3b3JrZXIgZmFpbHMgdG8gZmlyZSwgYW4gT3JiaXRhbAp3b3JrZXIgY2F0Y2hlcyB0aGUgbWlzcyBhbmQgdHJpZ2dlcnMgdGhlIGNvbnRyYWN0LgoKYGBgdHMKaW1wb3J0IHsgQmFja3N0b3BXYXRjaGVyLCByZWdpc3RlckJhY2tzdG9wIH0gZnJvbSAiQG9yYml0YWwtc3RlbGxhci93b3JrZXItY29yZSI7Cgpjb25zdCByZWdpc3RyYXRpb24gPSByZWdpc3RlckJhY2tzdG9wKHsKICBzdWJzY3JpcHRpb25JZDogInN1Yi0xIiwKICB3b3JrZXJJZDogInBheXJvbGxtdzEiLAogIHRpZXI6ICJ0aW1lLWluc2Vuc2l0aXZlIiwgICAvLyBsYXRlbmN5LXNlbnNpdGl2ZSB0aWVycyB3YWl0IGZvciAyMi40CiAgZ3JhY2VMZWRnZXJzOiA1LCAgICAgICAgICAgIC8vIHBlci1zdWJzY3JpcHRpb24sIGZyb20gdGhlIG1hbmlmZXN0J3MgYm91bmQKfSk7Cgpjb25zdCB3YXRjaGVyID0gbmV3IEJhY2tzdG9wV2F0Y2hlcihyZWdpc3RyYXRpb24uc3Vic2NyaXB0aW9uLCBkZXBzKTsKY29uc3Qgb3V0Y29tZSA9IGF3YWl0IHdhdGNoZXIuZXZhbHVhdGUod2luZG93LCBjdXJyZW50TGVkZ2VyKTsKYGBgCgpUaGUgZG91YmxlLWZpcmUgcmFjZSBpcyB0aGUgY2VudHJhbCBjb3JyZWN0bmVzcyBwcm9ibGVtLCBhbmQgaXQgaXMgbm90IHNvbHZlZAp3aXRoIHRpbWluZy4gVGhlIGJhY2tzdG9wIGNsYWltcyAqKnRoZSBzYW1lIHdpbmRvdyBpZCB0aGUgcHJpbWFyeSBjbGFpbXMqKiwKdGhyb3VnaCB0aGUgc2FtZSAxOC42IHN0b3JlLCBzbyB0aGUgcmFjZSBpcyBkZWNpZGVkIGJ5IG9uZSBhdG9taWMgY2xhaW0gcmF0aGVyCnRoYW4gYnkgaG8gbm90aWNlZCBmaXJzdC4gQSBwcmltYXJ5IHRoYXQgZmlyZXMgbGF0ZSDigJQgYWZ0ZXIgaXRzIGRlYWRsaW5lIGJ1dAppbnNpZGUgZ3JhY2Ug4oCUIGFscmVhZHkgaG9sZHMgdGhlIGNsYWltLCBhbmQgdGhlIGJhY2tzdG9wIHN0YW5kcyBkb3duLgoKYHdhdGNoZXIuc3RhdHNgIGNvdW50cyAqKndpbmRvd3Mgd2F0Y2hlZCoqLCBub3Qgb25seSBpbnRlcnZlbnRpb25zLCBiZWNhdXNlIHRoZQpjb3N0IG9mIGEgYmFja3N0b3AgaXMgcmVhZGluZXNzIHJhdGhlciB0aGFuIHBheW91dHM6IGl0IHNjYWxlcyB3aXRoCnN1YnNjcmlwdGlvbnMsIG5vdCB3aXRoIGZhaWx1cmVzLiBFeHBvc2VkIGZyb20gdGhlIHN0YXJ0IHJhdGhlciB0aGFuIHJldHJvZml0dGVkCmJ5IDIxLjIsIHNpbmNlIGEgY29zdCBtb2RlbCBhZGRlZCBhZnRlcndhcmRzIG1lYXN1cmVzIHdoYXRldmVyIHRoZQppbXBsZW1lbnRhdGlvbiBoYXBwZW5lZCB0byBkby4KCiMjIERlc2lnbiBub3RlcwoKTm90aGluZyBpbiB0aGlzIHBhY2thZ2UgcnVucyBhIHdvcmtlci4gRXhlY3V0aW9uLCBzdWJtaXNzaW9uLCBhbmQgc2lnbmluZyBhcmUKbGF0ZXIgcGFja2FnZXMgaW4gdGhlIDE4LngtMjIueCBzZXJpZXM7IHRoaXMgaXMgdGhlIHNoYXJlZCB2b2NhYnVsYXJ5IHRoZXkKYnVpbGQgb24uCgojIyBRdWlja3N0YXJ0CgpgYGB0cwppbXBvcnQgdHlwZSB7IFdvcmtlckRlZmluaXRpb24sIENoYWluU3RhdGUgfSBmcm9tICJAb3JiaXRhbC1zdGVsbGFyL3dvcmtlci1jb3JlIjsKaW1wb3J0IHsgYXNzZXJ0SW1wbGVtZW50ZWRUcmlnZ2VyIH0gZnJvbSAiQG9yYml0YWwtc3RlbGxhci93b3JrZXItY29yZSI7Cgpjb25zdCB3b3JrZXI6IFdvcmtlckRlZmluaXRpb248W3N0cmluZywgYmlnaW50XT4gPSB7CiAgaWQ6ICJwYXlyb2xsLWRpc2J1cnNlLWRhaWx5IiwKICBvcGVyYXRvcjogIkdBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFXR0giLAogIHRhcmdldENvbnRyYWN0SWQ6ICJDQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBV0hGIiwKICBmdW5jdGlvbk5hbWU6ICJkaXNidXJzZSIsCiAgYnVpbGRBcmdzOiAoc3RhdGU6IENoYWluU3RhdGUpID0+IFsiR0JFTkVGSUNJQVJZLi4uIiwgQmlnSW50KHN0YXRlLmxlZGdlclNlcXVlbmNlKV0sCiAgdHJpZ2dlcjogewogICAga2luZDogInRpbWUiLAogICAgc2NoZWR1bGU6IHsga2luZDogImNyb24iLCBleHByZXNzaW9uOiAiMCAwICogKiAqIiwgdGltZXpvbmU6ICJVVEMiIH0sCiAgfSwKICBuZXR3b3JrOiAidGVzdG5ldCIsCn07CgovLyBFdmVyeSBzdWJtaXNzaW9uIHBhdGggdmFsaWRhdGVzIHRoZSB0cmlnZ2VyIGJlZm9yZSBhY3Rpbmcgb24gaXQgLSBgZXZlbnRgCi8vIGFuZCBgY29tcHV0YXRpb25gIHRyaWdnZXJzIHRocm93IHVudGlsIFcyLgphc3NlcnRJbXBsZW1lbnRlZFRyaWdnZXIod29ya2VyLnRyaWdnZXIpOwpgYGAKCiMjIEFQSQoKIyMjIGBXb3JrZXJEZWZpbml0aW9uPFRBcmdzPmAKClRoZSBmdWxsIGRlZmluaXRpb24gb2YgYSB3b3JrZXI6IGBpZGAsIGBvcGVyYXRvcmAsIGB0YXJnZXRDb250cmFjdElkYCwKYGZ1bmN0aW9uTmFtZWAsIGBidWlsZEFyZ3NgLCBgdHJpZ2dlcmAsIGBuZXR3b3JrYCwgYW5kIGFuIG9wdGlvbmFsIGBmZWVCdW1wYC4KCiMjIyBgQXJnQnVpbGRlcjxUQXJncz5gIC8gYENoYWluU3RhdGVgCgpgYnVpbGRBcmdzYCBtdXN0IGJlIGEgcHVyZSBmdW5jdGlvbiBvZiBgQ2hhaW5TdGF0ZWAgLSBzYW1lIGxlZGdlciBzbmFwc2hvdCBpbiwKc2FtZSBhcmd1bWVudHMgb3V0LCBubyBhbWJpZW50IHJlYWRzLiBUaGF0IHJlcHJvZHVjaWJpbGl0eSBpcyB3aGF0IGxldHMgMTkuMSdzCnZlcmlmaWNhdGlvbiByZWNvbnN0cnVjdCBhIHdvcmtlcidzIHN1Ym1pc3Npb24gZnJvbSB0aGUgbGVkZ2VyIGFsb25lLgoKIyMjIGBUcmlnZ2VyYCwgYFNjaGVkdWxlYAoKYFRyaWdnZXJgIGlzIGBUaW1lVHJpZ2dlciB8IEV2ZW50VHJpZ2dlciB8IENvbXB1dGF0aW9uVHJpZ2dlcmAuIGBTY2hlZHVsZWAgKHVzZWQKYnkgYFRpbWVUcmlnZ2VyYCkgaXMgYEludGVydmFsU2NoZWR1bGUgfCBDcm9uU2NoZWR1bGVgLCBib3RoIGNhcnJ5aW5nIGEgcmVxdWlyZWQKYHRpbWV6b25lYC4KCiMjIyBgYXNzZXJ0SW1wbGVtZW50ZWRUcmlnZ2VyKHRyaWdnZXIpYCAvIGBUcmlnZ2VyTm90SW1wbGVtZW50ZWRFcnJvcmAKCk5hcnJvd3MgYSBgVHJpZ2dlcmAgdG8gYFRpbWVUcmlnZ2VyYCwgdGhyb3dpbmcgYFRyaWdnZXJOb3RJbXBsZW1lbnRlZEVycm9yYCBmb3IKYGV2ZW50YCBhbmQgYGNvbXB1dGF0aW9uYCB0cmlnZ2Vycy4gQ2FsbCB0aGlzIGJlZm9yZSBhY3Rpbmcgb24gYW55IGBUcmlnZ2VyYC4KCiMjIE5vIGxhdGVuY3kgdGllciwgYW5kIG5vIGNvcHktdHJhZGUgd29ya2VyCgpCb3RoIHVzZWQgdG8gbGl2ZSBoZXJlIGFzIHN0dWJzLiBCb3RoIGFyZSBnb25lLgoKVGhleSBleGlzdGVkIHRvIHNlcnZlIGEgdHJhZGluZyBwcm9kdWN0IHRoaXMgcGFja2FnZSBpcyBub3QuIENvcHktdHJhZGluZyBtZWFucwptaXJyb3Jpbmcgc29tZW9uZSBlbHNlJ3MgdHJhZGVzIG9uIGEgc3Vic2NyaWJlcidzIGJlaGFsZiwgd2hpY2ggbWVhbnMgdGhlIHdvcmtlcgptb3ZlcyBzdWJzY3JpYmVyIGZ1bmRzLCB3aGljaCBtZWFucyBjdXN0b2R5LCB3aGljaCBpcyB3aHkgaXQgbmVlZGVkIGEgdmF1bHQgd2l0aAphbGxvdy1saXN0ZWQgcG9vbHMgYW5kIHNsaXBwYWdlIGJvdW5kcy4gRXZlcnkgc3RlcCBmb2xsb3dlZCBmcm9tIHRoZSBvbmUgYmVmb3JlCml0OyB0aGUgZmlyc3Qgc3RlcCB3YXMgdGhlIG1pc3Rha2UuCgpBIHdvcmtlciBoZXJlIGNhbGxzIGEgZnVuY3Rpb24gKiphbnlvbmUgY291bGQgaGF2ZSBjYWxsZWQqKiBhbmQgaG9sZHMgbm90aGluZy4KYGNvbnRyYWN0cy9wYXlyb2xsYCdzIGBkaXNidXJzZSgpYCBpcyB0aGUgcmVmZXJlbmNlOiBpdCB0YWtlcyBubyBjYWxsZXIKYXV0aG9yaXphdGlvbiwgY2hlY2tzIGl0cyBvd24gY29uZGl0aW9ucywgYW5kIHByb2R1Y2VzIGlkZW50aWNhbCByZXN1bHRzIHdoZXRoZXIKYSB3b3JrZXIsIHRoZSBvd25lciwgYSByZWNpcGllbnQgb3IgYSBzdHJhbmdlciBmaXJlcyBpdC4gVGhlcmUgaXMgbm8gYXV0aG9yaXR5CnRvIGNvbnN0cmFpbiwgc28gdGhlcmUgaXMgbm90aGluZyBmb3IgYSB2YXVsdCB0byBkby4KCklzc3VlcyAjMTA2OCAodmF1bHQpLCAjMTA3MCAoY29weS10cmFkZSkgYW5kICMxMDcxIChsYXRlbmN5IHBhdGgpIGFyZSBjbG9zZWQKdW5idWlsdC4gU2VlIFtgZG9jcy9kZXNpZ24vd29ya2Vycy5tZCDCpjZgXSguLi8uLi9kb2NzL2Rlc2lnbi93b3JrZXJzLm1kI3RoZS12YXVsdC1wYXR0ZXJuLXdhcy1jdXQpCmZvciB0aGUgcmVhc29uaW5nLCBhbmQgcmVhZCBpdCBiZWZvcmUgcHJvcG9zaW5nIGFueSBvZiB0aGVtIGFnYWluLgoKIyMgUHJpY2UgYW5kIHNsaXBwYWdlIGd1YXJkIHJhaWxzIChgZ3VhcmRzL2ApCgpUcmFkZSBhdXRvbWF0aW9uIHJlYWRzIHByaWNlcywgYW5kIGEgcHJpY2Ugc291cmNlIGlzIGFuIGF0dGFjayBzdXJmYWNlLiBUaGVzZQpndWFyZHMgcnVuIGJlZm9yZSBhIHdvcmtlciBidWlsZHMgYSB0cmFuc2FjdGlvbiAtIHRoZXkgc2l0IGluIGZyb250IG9mIHRoZQp2YXVsdCdzIG9uLWNoYWluIHNsaXBwYWdlIGJvdW5kLCBub3QgaW4gcGxhY2Ugb2YgaXQuIFRoZSBmdWxsIG9uLWNoYWluLwpvZmYtY2hhaW4gc3BsaXQgaXMgZG9jdW1lbnRlZCBpbgpbYGRvY3MvZGVzaWduL3dvcmtlci1ndWFyZC1yYWlscy5tZGBdKC4uLy4uL2RvY3MvZGVzaWduL3dvcmtlci1ndWFyZC1yYWlscy5tZCk7CnRoZSBzaG9ydCB2ZXJzaW9uIGlzOiAqKm9uLWNoYWluIHdoZXJlIHRoZSBjb250cmFjdCBjYW4gY2hlY2sgaXQgaXRzZWxmLApvZmYtY2hhaW4gYXMgYSBwcmUtZmlsdGVyIGV2ZXJ5d2hlcmUsIGFuZCBvZmYtY2hhaW4gb25seSBmb3IgdGhlIGNpcmN1aXQKYnJlYWtlcioqLCB3aGljaCBpcyBpbmhlcmVudGx5IHdvcmtlci1wcm9jZXNzIHN0YXRlLgoKIyMjIGBjaGVja1N0YWxlbmVzcyhyZWFkaW5nLCBib3VuZCwgbm93VW5peClgIC8gYGNoZWNrRGV2aWF0aW9uKGEsIGIsIGJvdW5kKWAgLyBgY2hlY2tQcmljZUd1YXJkKHByaW1hcnksIHNlY29uZGFyeSwgY29uZmlnLCBub3dVbml4KWAKCmBQcmljZVJlYWRpbmdgIGlzIGZpeGVkLXBvaW50IChgcHJpY2U6IGJpZ2ludGAsIGBkZWNpbWFsczogbnVtYmVyYCksIG5vdCBhCmBudW1iZXJgIC0gZmxvYXQgYXJpdGhtZXRpYyBoYXMgbm8gcGxhY2UgaW4gYSBjaGVjayBtZWFudCB0byBjYXRjaCBhCm1hbmlwdWxhdGVkIHByaWNlLiBgY2hlY2tTdGFsZW5lc3NgIHJlamVjdHMgYSByZWFkaW5nIG9sZGVyIHRoYW4KYGJvdW5kLm1heEFnZVNlY29uZHNgLCBhbmQgcmVqZWN0cyBhIGZ1dHVyZS10aW1lc3RhbXBlZCByZWFkaW5nIHJhdGhlciB0aGFuCnRyZWF0aW5nIGl0IGFzIGZyZXNoZXItdGhhbi1mcmVzaC4gYGNoZWNrRGV2aWF0aW9uYCBjb21wYXJlcyB0d28KaW5kZXBlbmRlbnRseS1zb3VyY2VkIHJlYWRpbmdzIGFuZCByZWplY3RzIHRoZSBwYWlyIHBhc3QKYGJvdW5kLm1heERpdmVyZ2VuY2VCcHNgIC0gc3ltbWV0cmljIHJlZ2FyZGxlc3Mgb2YgYXJndW1lbnQgb3JkZXIsIGFuZCB0aGVyZQppcyBubyBzaW5nbGUtcmVhZGluZyBjb2RlIHBhdGgsIGJ5IGRlc2lnbiAoYXZvaWRpbmcgYSBzaW5nbGUtc291cmNlCmRlcGVuZGVuY3ksIMKnQy44KS4gYGNoZWNrUHJpY2VHdWFyZGAgcnVucyBib3RoOiBzdGFsZW5lc3Mgb24gYm90aCByZWFkaW5ncywKdGhlbiBkZXZpYXRpb24sIHNvIGEgc3RhbGUgcmVhZGluZyBpcyByZWplY3RlZCBiZWZvcmUgaXRzIHZhbHVlIGlzIGNvbXBhcmVkCnRvIGFueXRoaW5nLgoKIyMjIGBDaXJjdWl0QnJlYWtlcmAKClRyYWNrcyBjb25zZWN1dGl2ZSBndWFyZCB0cmlwcyBwZXIgd29ya2VyLiBUcmlwcyBgb3BlbmAgYWZ0ZXIKYG1heENvbnNlY3V0aXZlVHJpcHNgIGNvbnNlY3V0aXZlIGByZWNvcmRUcmlwYCBjYWxsczsgYSBjbGVhbgpgcmVjb3JkU3VjY2VzcygpYCByZXNldHMgdGhlIGNvdW50ZXIgd2hpbGUgY2xvc2VkLiBPbmNlIG9wZW4sIGl0IHN0YXlzIG9wZW4gLQpgbWFudWFsUmVlbmFibGUocmVlbmFibGVkQnksIHJlZW5hYmxlZEF0VW5peCwgcmF0aW9uYWxlKWAgaXMgdGhlIG9ubHkgd2F5IHRvCmNsb3NlIGl0LCBkZWxpYmVyYXRlbHk6IGFuIGF1dG9tYXRpYyByZXNldCB3b3VsZCByZS1lbnRlciB0aGUgZXhhY3QgY29uZGl0aW9uCnRoYXQgdHJpcHBlZCBpdC4gRXZlcnkgdHJpcCAoYGdldFRyaXBzKClgKSBhbmQgZXZlcnkgcmUtZW5hYmxlCihgZ2V0UmVlbmFibGVzKClgKSBpcyByZWNvcmRlZCBmb3IgdGhlIHNjb3JlY2FyZCwgYW5kIGFuIG9wdGlvbmFsIGBvblRyaXBgCmNhbGxiYWNrIGlzIHRoZSBzZWFtIGEgcmVhbCBkZXBsb3ltZW50IHVzZXMgdG8gbm90aWZ5IGFuIG9wZXJhdG9yLgoKPiAqKk9uLWNoYWluIGhhbGYgbm90IHlldCBidWlsdC4qKiBJc3N1ZSAyMi41IGRlcGVuZHMgb24gMjIuMyAodGhlCj4gY29weS10cmFkZS92YXVsdCB3b3JrZXIpLCBhbmQgYGNvbnRyYWN0cy92YXVsdGAgZG9lcyBub3QgZXhpc3QgaW4gdGhpcyByZXBvCj4geWV0IC0gc2VlIGBkb2NzL2Rlc2lnbi93b3JrZXItZ3VhcmQtcmFpbHMubWRgIGZvciB3aGF0IHRoYXQgY29udHJhY3QgbXVzdAo+IGVuZm9yY2Ugb25jZSBpdCBkb2VzLgoKIyMgU3RhYmlsaXR5CgpUaGlzIHBhY2thZ2UgaXMgYDAueGAgYW5kIG1heSBicmVhayBpbiBtaW5vcnMgdW50aWwgaXQgcmVhY2hlcyBgMS4wLjBgIC0gc2VlCltgU1RBQklMSVRZLm1kYF0oLi4vLi4vU1RBQklMSVRZLm1kKSBhdCB0aGUgcmVwbyByb290LgoKIyMgTGljZW5zZQoKTUlUCldvcmtlci1zaWRlIHZlcmlmaWNhdGlvbiBiYWNrZmlsbCBhbmQgbG9uZy1yYW5nZSByZXBsYXkgc3Vic3RyYXRlIG92ZXIgQ0RQIC8KR2FsZXhpZSBsZWRnZXIgZXhwb3J0cy4KCk9yYml0YWwgb3BlcmF0ZXMgKipubyBsZWRnZXIgc3RvcmUgb2YgaXRzIG93bioqIChkZXNpZ24gZG9jIMKnQi41KTogaGlzdG9yaWNhbApsZWRnZXJzIGFyZSByZWFkIGZyb20gYW4gZXh0ZXJuYWwgZXhwb3J0IGFuZCBkaXNjYXJkZWQ7IG9ubHkgZGVyaXZlZCB2ZXJkaWN0cwphcmUgd3JpdHRlbi4KCiMjIE9wZXJhdG9yIHJlcHV0YXRpb24gc2NvcmluZyAoYHJlcHV0YXRpb24vYCkKClRoZSB2ZXJzaW9uLXN0YW1wZWQgYDAuLjEwMDBgIG9wZXJhdG9yIHJlcHV0YXRpb24gc2NvcmUsIGRlcml2ZWQgcHVyZWx5IGZyb20KY2hhaW4tZGVyaXZlZCB2ZXJkaWN0IHJlY29yZHMuIE5ldyBvcGVyYXRvcnMgd2l0aCBpbnN1ZmZpY2llbnQgaGlzdG9yeSByZWNlaXZlCmBpbnN1ZmZpY2llbnRfZGF0YWAg4oCUIG5ldmVyIGEgZGVmYXVsdCBzY29yZS4KCmBgYHRzCmltcG9ydCB7IHNjb3JlT3BlcmF0b3IsIFNDT1JFX0ZPUk1VTEFfVkVSU0lPTiwgdHlwZSBWZXJkaWN0IH0gZnJvbSAiQG9yYml0YWwtc3RlbGxhci93b3JrZXItY29yZSI7Cgpjb25zdCB2ZXJkaWN0czogVmVyZGljdFtdID0gLyogY2hhaW4tZGVyaXZlZCB2ZXJkaWN0IHJlY29yZHMgKi8gW107Cgpjb25zdCByZXN1bHQgPSBzY29yZU9wZXJhdG9yKHZlcmRpY3RzLCAib3BlcmF0b3ItaWQiLCB7CiAgZm9ybXVsYVZlcnNpb246IFNDT1JFX0ZPUk1VTEFfVkVSU0lPTiwKICB3aW5kb3dNczogMzAgKiA4Nl80MDBfMDAwLAogIGhhbGZMaWZlTXM6IDcgKiA4Nl80MDBfMDAwLAogIG1pblNhbXBsZXM6IDIwLAogIGxhdGVuY3lUYXJnZXRNczogMjAwMCwKfSwgRGF0ZS5ub3coKSk7CgppZiAocmVzdWx0LnN0YXR1cyA9PT0gImluc3VmZmljaWVudF9kYXRhIikgewogIC8vIG9wZXJhdG9yIGhhcyBub3QgZWFybmVkIGVub3VnaCB2ZXJkaWN0cyB5ZXQKfSBlbHNlIHsKICBjb25zb2xlLmxvZyhyZXN1bHQuc2NvcmUsIHJlc3VsdC5jb250cmlidXRvcnMpOwp9CmBgYAoKVGhlIGZvcm11bGEgYW5kIHdvcmtlZCBleGFtcGxlIGFyZSBpbgpbYGRvY3MvZGVzaWduL3dvcmtlci1yZXB1dGF0aW9uLm1kYF0oLi4vLi4vZG9jcy9kZXNpZ24vd29ya2VyLXJlcHV0YXRpb24ubWQpLgoKIyMgV2hhdCdzIGhlcmUKCi0gYGV4cG9ydHMvYCDigJQgdGhlIHNoYXJlZCAqKmV4cG9ydCByZWFkZXIqKiAoYEV4cG9ydFJlYWRlcmAgKyBgRXhwb3J0U291cmNlYCkuCiAgT25lIHJlYWRlciwgdHdvIGNvbnN1bWVyczogdmVyaWZpY2F0aW9uIGJhY2tmaWxsICgjMTA1NCkgYW5kIGxvbmctcmFuZ2UgcmVwbGF5CiAgKCM5MjApLiBTaGlwcyBgRmlsZUV4cG9ydFNvdXJjZWAgKEdhbGV4aWUvQ0RQIEpTT05MKSBhbmQgYE1lbW9yeUV4cG9ydFNvdXJjZWAuCi0gYHZlcmlmaWNhdGlvbi9jYW5vbmljYWwudHNgIOKAlCB0aGUgY2Fub25pY2FsIGBWZXJpZmljYXRpb25FdmVudGAgbW9kZWwgYW5kIHRoZQogICoqc2luZ2xlKiogb3BlcmF0aW9u4oaSZXZlbnQgbWFwcGVyIHNoYXJlZCBieSB0aGUgZXhwb3J0IGFuZCBsaXZlIHBhdGhzLgotIGB2ZXJpZmljYXRpb24vdmVyZGljdC50c2Ag4oCUIGBjb21wdXRlVmVyZGljdGAsIHRoZSAqKnNpbmdsZSoqIGRldGVybWluaXN0aWMKICBzY29yaW5nIGZ1bmN0aW9uLiBJdHMgYGZpbmdlcnByaW50YCBpcyBieXRlLWlkZW50aWNhbCBmb3IgZXhwb3J0LSBhbmQKICBSUEMtc291cmNlZCBpbnB1dHMgb3ZlciB0aGUgc2FtZSByYW5nZS4KLSBgdmVyaWZpY2F0aW9uL2JhY2tmaWxsLnRzYCDigJQgYEJhY2tmaWxsUnVubmVyYDogcmVzdW1hYmxlIChjaGVja3BvaW50ZWQpLAogIGlkZW1wb3RlbnQgKGtleWVkIHVwc2VydCksIG1hcmtzIHZlcmRpY3RzIGBzb3VyY2U6ICJiYWNrZmlsbCJgLgotIGB2ZXJpZmljYXRpb24vbGl2ZVZlcmlmaWVyLnRzYCDigJQgbGl2ZSBwYXRoIGFkYXB0ZXIgdGhhdCBjYWxscyB0aGUgc2FtZQogIGBjb21wdXRlVmVyZGljdGAuCi0gYHZlcmlmaWNhdGlvbi9zdG9yZXMudHNgIOKAlCBgVmVyZGljdFNpbmtgIC8gYENoZWNrcG9pbnRTdG9yZWAKICAoaW4tbWVtb3J5ICsgZmlsZSkuCgojIyBRdWljayBzdGFydAoKYGBgdHMKaW1wb3J0IHsKICBCYWNrZmlsbFJ1bm5lciwKICBFeHBvcnRSZWFkZXIsCiAgRmlsZUV4cG9ydFNvdXJjZSwKICBGaWxlVmVyZGljdFNpbmssCiAgRmlsZUNoZWNrcG9pbnRTdG9yZSwKfSBmcm9tICJAb3JiaXRhbC1zdGVsbGFyL3dvcmtlci1jb3JlIjsKCmNvbnN0IHJlYWRlciA9IG5ldyBFeHBvcnRSZWFkZXIoCiAgbmV3IEZpbGVFeHBvcnRTb3VyY2UoeyBkaXJlY3Rvcnk6ICIvZXhwb3J0cy9sZWRnZXJzIiwgZm9ybWF0OiAiZ2FsZXhpZSIgfSksCik7Cgpjb25zdCByZXN1bHQgPSBhd2FpdCBuZXcgQmFja2ZpbGxSdW5uZXIoewogIHJlYWRlciwKICByYW5nZTogeyBzdGFydExlZGdlcjogMTBfMDAwXzAwMCwgZW5kTGVkZ2VyOiAxMV8wMDBfMDAwIH0sCiAgd2luZG93U2l6ZTogMTAwMCwKICBzaW5rOiBuZXcgRmlsZVZlcmRpY3RTaW5rKCIvdmVyZGljdHMiKSwKICBjaGVja3BvaW50OiBuZXcgRmlsZUNoZWNrcG9pbnRTdG9yZQo=
+# @orbital-stellar/worker-core
+
+**Type model for Orbital workers: what a worker is, before anything runs one.**
+
+```bash
+pnpm add @orbital-stellar/worker-core
+```
+
+## Status
+
+The worker layer is no longer frozen scope. W0-W3 have shipped; W4 (vault,
+copy-trade, latency-sensitive tier) was dropped in #1137. See
+[`docs/design/workers.md`](../../docs/design/workers.md) for the build order
+as it stands.
+
+## The constraint this package exists to enforce
+
+**A worker's trigger is not a custodian.** A worker definition describes *when*
+to submit a transaction and *what* it invokes; it never describes *how to act
+as* the account that authorizes it. Concretely:
+
+- `WorkerDefinition.operator` is a public key. The definition names whose
+  authority a submission uses - it never holds a way to exercise that
+  authority itself.
+- There is no field anywhere in this model that can carry a user's secret key,
+  a signer, or any other credential. Signing a worker's transaction is the
+  submitter's responsibility (18.5), scoped to the operator's own account, and
+  happens downstream of everything this package defines.
+- If some future capability seems to need key material on a `WorkerDefinition`
+  or a `Trigger`, that need is a design bug in whatever wants it - not a gap
+  in this type to fill in.
+
+This is the working formulation of §C.2 for this package. The full
+architecture-decision record — all four rules in precedence order, the fixed
+W0 → W4 build order, the frozen non-goals, and two corrections that must not be
+re-litigated — is
+**[`docs/design/workers.md`](../../docs/design/workers.md): the trigger is not
+the custodian.**
+
+It is not background reading. It carries the review rule this package is
+maintained by:
+
+> If a proposed worker needs signing authority to do its job, the design is the
+> bug — not the worker.
+
+A change that gives a worker authority over user funds is rejected on that basis
+alone, however convenient it is. Prior art and competitive notes are kept
+separately in
+[`docs/design/prior-art-workers.md`](../../docs/design/prior-art-workers.md),
+because they date fast and are self-reported rather than audited.
+
+## What it does
+
+`worker-core` defines what a worker *is*, before anything runs one. A worker
+is an off-chain process that submits a transaction invoking a Soroban contract
+function when a condition becomes true. This package is that type model:
+
+- **`WorkerDefinition`** - id, operator, target contract, function name, a
+  pure argument builder, trigger, network, and an optional fee-bump policy.
+- **`Trigger`** - a discriminated union over `time` | `event` | `computation`.
+  Only `time` executes in W0; `event` and `computation` exist as types now so
+  that 19.x-22.x extend this union instead of reshaping it, and are rejected
+  at runtime by `assertImplementedTrigger` until W2.
+- **`Schedule`** - `interval` or `cron`, both with an explicit `timezone` so a
+  schedule's execution times don't depend on where the worker happens to run.
+
+## Backstop
+
+§C.7's mechanism: when a registered external worker fails to fire, an Orbital
+worker catches the miss and triggers the contract.
+
+```ts
+import { BackstopWatcher, registerBackstop } from "@orbital-stellar/worker-core";
+
+const registration = registerBackstop({
+  subscriptionId: "sub-1",
+  workerId: "payroll-w1",
+  tier: "time-insensitive",   // latency-sensitive tiers wait for 22.4
+  graceLedgers: 5,            // per-subscription, from the manifest's bound
+});
+
+const watcher = new BackstopWatcher(registration.subscription, deps);
+const outcome = await watcher.evaluate(window, currentLedger);
+```
+
+The double-fire race is the central correctness problem, and it is not solved
+with timing. The backstop claims **the same window id the primary claims**,
+through the same 18.6 store, so the race is decided by one atomic claim rather
+than by who noticed first. A primary that fires late — after its deadline but
+inside grace — already holds the claim, and the backstop stands down.
+
+`watcher.stats` counts **windows watched**, not only interventions, because the
+cost of a backstop is readiness rather than payouts: it scales with
+subscriptions, not with failures. Exposed from the start rather than retrofitted
+by 21.2, since a cost model added afterwards measures whatever the
+implementation happened to do.
+
+## Design notes
+
+Nothing in this package runs a worker. Execution, submission, and signing are
+later packages in the 18.x-22.x series; this is the shared vocabulary they
+build on.
+
+## Quickstart
+
+```ts
+import type { WorkerDefinition, ChainState } from "@orbital-stellar/worker-core";
+import { assertImplementedTrigger } from "@orbital-stellar/worker-core";
+
+const worker: WorkerDefinition<[string, bigint]> = {
+  id: "payroll-disburse-daily",
+  operator: "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+  targetContractId: "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+  functionName: "disburse",
+  buildArgs: (state: ChainState) => ["GBENEFICIARY...", BigInt(state.ledgerSequence)],
+  trigger: {
+    kind: "time",
+    schedule: { kind: "cron", expression: "0 0 * * *", timezone: "UTC" },
+  },
+  network: "testnet",
+};
+
+// Every submission path validates the trigger before acting on it - `event`
+// and `computation` triggers throw until W2.
+assertImplementedTrigger(worker.trigger);
+```
+
+## API
+
+### `WorkerDefinition<TArgs>`
+
+The full definition of a worker: `id`, `operator`, `targetContractId`,
+`functionName`, `buildArgs`, `trigger`, `network`, and an optional `feeBump`.
+
+### `ArgBuilder<TArgs>` / `ChainState`
+
+`buildArgs` must be a pure function of `ChainState` - same ledger snapshot in,
+same arguments out, no ambient reads. That reproducibility is what lets 19.1's
+verification reconstruct a worker's submission from the ledger alone.
+
+### `Trigger`, `Schedule`
+
+`Trigger` is `TimeTrigger | EventTrigger | ComputationTrigger`. `Schedule` (used
+by `TimeTrigger`) is `IntervalSchedule | CronSchedule`, both carrying a required
+`timezone`.
+
+### `assertImplementedTrigger(trigger)` / `TriggerNotImplementedError`
+
+Narrows a `Trigger` to `TimeTrigger`, throwing `TriggerNotImplementedError` for
+`event` and `computation` triggers. Call this before acting on any `Trigger`.
+
+## No latency tier, and no copy-trade worker
+
+Both used to live here as stubs. Both are gone.
+
+They existed to serve a trading product this package is not. Copy-trading means
+mirroring someone else's trades on a subscriber's behalf, which means the worker
+moves subscriber funds, which means custody, which is why it needed a vault with
+allow-listed pools and slippage bounds. Every step followed from the one before
+it; the first step was the mistake.
+
+A worker here calls a function **anyone could have called** and holds nothing.
+`contracts/payroll`'s `disburse()` is the reference: it takes no caller
+authorization, checks its own conditions, and produces identical results whether
+a worker, the owner, a recipient or a stranger fires it. There is no authority
+to constrain, so there is nothing for a vault to do.
+
+Issues #1068 (vault), #1070 (copy-trade) and #1071 (latency path) are closed
+unbuilt. See [`docs/design/workers.md` §6](../../docs/design/workers.md#the-vault-pattern-was-cut)
+for the reasoning, and read it before proposing any of them again.
+
+## Price and slippage guard rails (`guards/`)
+
+Trade automation reads prices, and a price source is an attack surface. These
+guards run before a worker builds a transaction - they sit in front of the
+vault's on-chain slippage bound, not in place of it. The full on-chain/
+off-chain split is documented in
+[`docs/design/worker-guard-rails.md`](../../docs/design/worker-guard-rails.md);
+the short version is: **on-chain where the contract can check it itself,
+off-chain as a pre-filter everywhere, and off-chain only for the circuit
+breaker**, which is inherently worker-process state.
+
+### `checkStaleness(reading, bound, nowUnix)` / `checkDeviation(a, b, bound)` / `checkPriceGuard(primary, secondary, config, nowUnix)`
+
+`PriceReading` is fixed-point (`price: bigint`, `decimals: number`), not a
+`number` - float arithmetic has no place in a check meant to catch a
+manipulated price. `checkStaleness` rejects a reading older than
+`bound.maxAgeSeconds`, and rejects a future-timestamped reading rather than
+treating it as fresher-than-fresh. `checkDeviation` compares two
+independently-sourced readings and rejects the pair past
+`bound.maxDivergenceBps` - symmetric regardless of argument order, and there
+is no single-reading code path, by design (avoiding a single-source
+dependency, §C.8). `checkPriceGuard` runs both: staleness on both readings,
+then deviation, so a stale reading is rejected before its value is compared
+to anything.
+
+### `CircuitBreaker`
+
+Tracks consecutive guard trips per worker. Trips `open` after
+`maxConsecutiveTrips` consecutive `recordTrip` calls; a clean
+`recordSuccess()` resets the counter while closed. Once open, it stays open -
+`manualReenable(reenabledBy, reenabledAtUnix, rationale)` is the only way to
+close it, deliberately: an automatic reset would re-enter the exact condition
+that tripped it. Every trip (`getTrips()`) and every re-enable
+(`getReenables()`) is recorded for the scorecard, and an optional `onTrip`
+callback is the seam a real deployment uses to notify an operator.
+
+> **On-chain half not yet built.** Issue 22.5 depends on 22.3 (the
+> copy-trade/vault worker), and `contracts/vault` does not exist in this repo
+> yet - see `docs/design/worker-guard-rails.md` for what that contract must
+> enforce once it does.
+
+## Stability
+
+This package is `0.x` and may break in minors until it reaches `1.0.0` - see
+[`STABILITY.md`](../../STABILITY.md) at the repo root.
+
+## License
+
+MIT
+Worker-side verification backfill and long-range replay substrate over CDP /
+Galexie ledger exports.
+
+Orbital operates **no ledger store of its own** (design doc §B.5): historical
+ledgers are read from an external export and discarded; only derived verdicts
+are written.
+
+## Operator reputation scoring (`reputation/`)
+
+The version-stamped `0..1000` operator reputation score, derived purely from
+chain-derived verdict records. New operators with insufficient history receive
+`insufficient_data` — never a default score.
+
+```ts
+import { scoreOperator, SCORE_FORMULA_VERSION, type Verdict } from "@orbital-stellar/worker-core";
+
+const verdicts: Verdict[] = /* chain-derived verdict records */ [];
+
+const result = scoreOperator(verdicts, "operator-id", {
+  formulaVersion: SCORE_FORMULA_VERSION,
+  windowMs: 30 * 86_400_000,
+  halfLifeMs: 7 * 86_400_000,
+  minSamples: 20,
+  latencyTargetMs: 2000,
+}, Date.now());
+
+if (result.status === "insufficient_data") {
+  // operator has not earned enough verdicts yet
+} else {
+  console.log(result.score, result.contributors);
+}
+```
+
+The formula and worked example are in
+[`docs/design/worker-reputation.md`](../../docs/design/worker-reputation.md).
+
+## What's here
+
+- `exports/` — the shared **export reader** (`ExportReader` + `ExportSource`).
+  One reader, two consumers: verification backfill (#1054) and long-range replay
+  (#920). Ships `FileExportSource` (Galexie/CDP JSONL) and `MemoryExportSource`.
+- `verification/canonical.ts` — the canonical `VerificationEvent` model and the
+  **single** operation→event mapper shared by the export and live paths.
+- `verification/verdict.ts` — `computeVerdict`, the **single** deterministic
+  scoring function. Its `fingerprint` is byte-identical for export- and
+  RPC-sourced inputs over the same range.
+- `verification/backfill.ts` — `BackfillRunner`: resumable (checkpointed),
+  idempotent (keyed upsert), marks verdicts `source: "backfill"`.
+- `verification/liveVerifier.ts` — live path adapter that calls the same
+  `computeVerdict`.
+- `verification/stores.ts` — `VerdictSink` / `CheckpointStore`
+  (in-memory + file).
+
+## Quick start
+
+```ts
+import {
+  BackfillRunner,
+  ExportReader,
+  FileExportSource,
+  FileVerdictSink,
+  FileCheckpointStore,
+} from "@orbital-stellar/worker-core";
+
+const reader = new ExportReader(
+  new FileExportSource({ directory: "/exports/ledgers", format: "galexie" }),
+);
+
+const result = await new BackfillRunner({
+  reader,
+  range: { startLedger: 10_000_000, endLedger: 11_000_000 },
+  windowSize: 1000,
+  sink: new FileVerdictSink("/verdicts"),
+  checkpoint: new FileCheckpointStore("/verdicts"),
+  subjects: ["GABC...", "CDEF..."], // or omit to score every address
+}).run();
+
+// result.provenance states where the data was read from.
+console.log(result.provenance);
+```
+
+See `docs/design/worker-verification-backfill.md` for the full design, the
+byte-identical guarantee, and the cost model.
+Worker layer primitives: triggers that hold no authority over the funds they move.
+
+> **Status: partial.** This package currently ships the transaction builder and
+> submitter (#1040). The package scaffold and the full worker definition model
+> are #1038's deliverable; `src/types.ts` carries a provisional
+> `WorkerDefinition` covering only the fields the submitter reads, so it can be
+> replaced by a type import once #1038 lands.
+
+## What the submitter does
+
+`TxSubmitter` turns a due worker decision into a signed, submitted Soroban
+invocation:
+
+1. **Builds** an `InvokeHostFunction` operation from the worker's contract ID,
+   function name and already-encoded arguments.
+2. **Simulates** it through `@orbital-stellar/pulse-core`'s `SorobanRpcClient` -
+   the same RPC client the rest of the repo uses, not a second client layer.
+3. **Prices** it from that simulation's `minResourceFee`, padded by a bounded
+   multiplier and checked against a configured ceiling (see below).
+4. **Signs** with the operator's own key, and only that key.
+5. **Submits**, then **confirms by polling** `getTransaction` - a successful
+   send is never taken as a successful invocation.
+
+```ts
+import { OperatorSigner, TxSubmitter } from "@orbital-stellar/worker-core";
+import { SorobanRpcClient } from "@orbital-stellar/pulse-core";
+import { Networks } from "@stellar/stellar-sdk";
+
+const submitter = new TxSubmitter({
+  client: new SorobanRpcClient({ url: process.env.SOROBAN_RPC_URL! }),
+  signer: OperatorSigner.fromEnv({ networkPassphrase: Networks.TESTNET }),
+  networkPassphrase: Networks.TESTNET,
+  loadAccount: (accountId) => horizon.loadAccount(accountId),
+  feeMultiplier: 1.5,
+  maxFeeStroops: 5_000_000,
+});
+
+const outcome = await submitter.submit(worker);
+```
+
+## Outcomes
+
+`submit` does not throw for anything a caller is expected to handle:
+
+| `outcome.status` | Meaning |
+|---|---|
+| `submitted` | The transaction landed in a ledger. Carries the hash, ledger and the fee actually signed for. |
+| `contract_rejected` | The contract refused the call - e.g. a permissionless `disburse()` saying "not yet due". **This is the design working, not a miss.** |
+| `failed` | Infrastructure, fee-cap or on-chain failure, with `retryable` saying whether trying again could help. |
+
+`contract_rejected` is deliberately its own status so downstream scoring does
+not count a correct refusal as a missed trigger.
+
+## Fees are always bounded
+
+An uncapped fee on a congested ledger is how an operator drains its own XLM
+float. `resolveFee` pads the simulated resource fee by `feeMultiplier`
+(default 1.5, hard ceiling 10) and refuses anything above `maxFeeStroops`
+(default 10,000,000 stroops = 1 XLM) with a `FeeCapExceededError`. A capped-out
+submission comes back as a retryable `failed` outcome - nothing is signed and
+nothing is sent.
+
+## One key, and only one
+
+`OperatorSigner` wraps exactly one keypair - the operator's. A worker triggers a
+permissionless call; it never holds authority over a subscriber's funds, so it
+never needs a subscriber's key. The type is shaped so that giving it one cannot
+be a quiet change: the keypair is private, `sign` takes no signer argument, and
+`TxSubmitter` accepts a signer rather than a list of them. Adding a second
+signer means changing this shape, which is an obvious diff in review.
+
+The seed is read through `pulse-core`'s `secretPolicy` helpers, is never logged
+(`toString`/`toJSON`/`describe` all render the public key), and never appears in
+an error message - not even a prefix. `ORBITAL_OPERATOR_SECRET` is covered by
+`scripts/assert-no-secrets-in-bundle.mjs`.
